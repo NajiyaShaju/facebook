@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Facebook</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    <script src=js/login.js></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1 col-lg-1 col-sm-1 col-xs-1"></div>
+            <div class=" col-sm-5 col-md-5 col-lg-5 col-xs-12">
+                <img src="images/fb_logo.png" class="img-responsive fb_logo" height="40px" width="150px">
+            </div>
+            <form>
+                <div class="row hidden-md hidden-sm hidden-lg" style="height:100px;"></div>
+                <div class=" col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                    <div class="col-md-5 col-lg-5 col-sm-5 col-xs-12">
+                        <label for="email" class="control-label xs-hidden">Email or Phone</label>
+                        <input type="email" name="txt_email" class="form-control email" placeholder="Email or Phone" id="txtEmail">
+                        <span id="spanEmail"></span>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-5 col-xs-12">
+                        <label for="email" class="control-label xs-hidden">Password</label>
+                        <input type="password" name="txt_pass" class="form-control email" placeholder="Password" id="txtPassword">
+                        <p><span id="spanPassword"></span><a href="#" style="font-size: 12px; color: #9cb2ce;">Forgotten account?</a></p>
+                    </div>
+                    <div class="col-md-1  col-lg-1 col-sm-2 col-xs-12">
+                        <div class="row hidden-xs" style="height: 25px;;"></div>
+                        <div class="row">
+                            <a href="" class="btn btn-log col-xs-12  col-sm-12" onclick="return loginValidateEmpty();">Log In</a>
+                        </div>
+                        <div class="row hidden-lg hidden-md hidden-sm">
+                            <div class="col-xs-12 ">
+                                <div class="row" style="height: 25px;"></div>
+                                <div class="col-xs-2"></div>
+                                <div class="col-xs-8">
+                                    <button type="submit " class="btn col-xs-12 btn_sign">Create New account</button>
+                                </div>
+                                <div class="col-xs-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="row " style="background-color: #d4d8e8;background-image: linear-gradient(to top,#d4d8e8 ,white);height: auto; ">
+            <div class="col-md-6 hidden-xs col-sm-6">
+                <div class="row " style="height: 40px; "></div>
+                <div class="col-md-2 "></div>
+                <div class="col-md-9 ">
+                    <p style="color: #29487d; font-size: 20px;font-weight: bolder; ">Facebook helps you connect and share with the peope in your life </p>
+                    <img src="images/connect.png " class="img-responsive ">
+                </div>
+            </div>
+            <div class="col-md-6 hidden-xs col-sm-6 ">
+                <div class="row " style="height: 20px; "></div>
+                <div class="col-md-11 ">
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <p style="color: #292827;font-size: 40px; font-weight: bolder; ">Create an account</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p style="color: #292827;font-size: 20px; font-weight: normal; ">It's quick and easy</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="First Name" id="txtFirstname">
+                                    <span id="spanFirstName"></span>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="Last Name" id="txtLastName">
+                                    <span id="spanLastName"></span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <input type="text" class="form-control" placeholder="Mobile Number or email address" id="txtMobile">
+                                    <span id="spanMobile"></span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12 ">
+                                    <input type="text" class="form-control " placeholder="New Password" id="txtPass">
+                                    <span id="spanPass"></span>
+                                </div>
+                            </div>
+                            <div class="form-row ">
+                                <div class="col-md-12 ">
+                                    <p style="font-size: 20px;;">Birthday</p>
+                                </div>
+                            </div>
+                            <div class="form-row ">
+                                <div class="col-md-5">
+
+                                    <select id="slctDay">
+                                        <option value="0" selected>Day</option>                                        
+                                        <script>
+                                              for (i = 1; i < 32; i++) {
+                                                        document.write('<option value="' + i + '">' + i + '</option>');
+                                                    }
+                                            </script>
+                                    </select>
+                                    <select id="slctMonth">
+                                        <option value="0" selected>Month</option>
+                                        <option value="1">Jan</option>
+                                        <option value="2">Feb</option>
+                                        <option value="3">Mar</option>
+                                        <option value="4">Apr</option>
+                                        <option value="5">May</option>
+                                        <option value="6">June</option>
+                                        <option value="7">July</option>
+                                        <option value="8">Aug</option>
+                                        <option value="9">Sep</option>
+                                        <option value="10">Oct</option>
+                                        <option value="11">Nov</option>
+                                        <option value="12">Dec</option>
+                                    </select>
+                                    <select id="slctYear">
+                                        <option value="0" selected>Year</option>
+                                        <script>
+                                            dt=new Date();
+                                            yr=dt.getFullYear()+1;
+                                            for (i = 1920; i < yr; i++) {
+                                                document.write('<option value="'+i+'">'+i+'</option>');
+                                            }
+                                        </script>
+                                    </select>
+                                    <br>
+                                    <span id="spanDate"></span>
+                                    <span id="spanValid"></span>
+                                </div>
+                                <div class="col-md-7">
+                                    <a href="#">Why do i need to provide my Date Of Birth</a>
+                                </div>
+
+
+                            </div>
+                            <div class="form-row ">
+                                <div class="col-md-12 ">
+                                    <p style="font-size: 20px;">Gender</p>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label" style="color: grey;font-size: 15px;" id="labelMale"><input class="form-check-input" type="radio" name="gender" value="option1" id="rdMale"> Male
+                                        </label> &nbsp;
+                                        <label class="form-check-label" style="color: grey;font-size: 15px;" id="labelFemale"><input class="form-check-input" type="radio" name="gender" value="option2" id="rdFemale">
+                                        Female</label>
+                                        <label class="form-check-label" style="color: grey;font-size: 15px;" id="labelCustom"><input class="form-check-input" type="radio" name="gender" value="option3" id="rdCustom">
+                                        Custom</label><br>
+                                        <span id="spanGender"></span>
+                                    </div>
+                                </div>
+                                <div class="form-row ">
+                                    <div class="col-md-7 ">
+                                        <p style="font-size:11px; ">
+                                            By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn btn_sign_main" onclick="return registerValidateEmpty();">Create an account</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <hr style="border-top:1px solid grey;">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <p><a href="#">Create  a page </a>for a celebrity brand or business </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="bootstrap/js/bootstrap.min.js "></script>
+</body>
+
+</html>

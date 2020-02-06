@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="js/wrong_email.js"></script>
+    <style type="text/css">
+        .container-fluid {
+            background-color: #3c589b;
+            height: 80px;
+        }
+        
+        .btn_sign {
+            background-color: rgb(63, 201, 63);
+            color: white;
+            border: 0px;
+        }
+        
+        .card-header {
+            /* background-color: rgb(210, 210, 231); */
+            color: rgb(23, 23, 165);
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        
+        a {
+            padding-right: 15px;
+            font-size: 11px;
+            color: rgb(36, 36, 211);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(224, 226, 235)">
+    <div class="container-fluid">
+        <div class="row" style="height:40%;"></div>
+        <div class="row">
+            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"></div>
+            <div class=" col-sm-10 col-md-10 col-lg-10 col-xs-10">
+                <div class="row">
+                    <div class="col-md-2 col-sm-4 col-lg-2 col-xs-8">
+                        <img src="images/fb_logo.png" class="img-responsive fb_logo" height="40px" width="150px">
+                    </div>
+                    <div class="col-md-10 col-sm-8 col-lg-10 col-xs-4">
+                        <button type="submit" class="btn btn_sign">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row" style="margin-top:100px;margin-bottom: 100px;">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+
+                <div class="card" style="width: 100%">
+                    <div class="card-body">
+                        <h5 class="card-title">Facebook Login </h5>
+                        <hr>
+                        <div style="margin: 0px 100px 0px 100px;">
+                            <form>
+                                <span id="spanEmail"></span>
+                                <div class="form-group row has-warning has-feedback">
+                                    <label for="staticEmail" class="col-sm-4 col-md-4 col-lg-4 col-form-label">Email or Phone</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group-prepend">
+                                            <input type="email" name="txt_Email" class="form-control" id="txtEmail" aria-describedby="inputGroupPrepend">
+                                            <span class="input-group-text fa fa-exclamation-triangle" id="inputGroupPrepend"></span>
+                                            <span id="spanEmail"></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row ">
+                                    <label for="inputPassword " class="col-sm-4 col-md-4 col-lg-4 col-form-label ">Password</label>
+                                    <div class="col-sm-8 ">
+                                        <input type="password" name="txt_Password" class="form-control " id="txtPassword">
+                                        <span id="spanPassword"></span>
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-sm-4 col-md-4 col-lg-4"></div>
+                                    <div class="col-sm-8">
+                                        <div class="checkbox">
+                                            <label>
+                                                    <input type="checkbox" value="signed">Keep me signed in
+                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-4 col-lg-4"></div>
+                                    <div class="col-sm-3 col-md-3 col-lg-3">
+                                        <button type="button" class="btn btn-primary btn-sm col-md-12 col-lg-12 col-sm-12" onclick="return validateEmpty();">Log In</button>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <p style="font-size: 14px;"> or <a href="#"> sign up for Facebook</a></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4"></div>
+                                    <div class="col-sm-8">
+                                        <a href="#"> Forgot Password</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3 "></div>
+        </div>
+        <div class="row" style="background-color: white;">
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 footer">
+                <p style="color: blue;">English(UK)</p>
+                <hr>
+                <div class="row">
+                    <div class="col-md-1">
+                        <a href="#">signUp</a>
+                        <a href="#">Games</a>
+                        <a href="#">Terms</a>
+                    </div>
+                    <div class="col-md-1">
+
+                        <a href="#">LogIn</a>
+                        <a href="#">Locations</a>
+                        <a href="#">Help</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="#">Messenger</a>
+                        <a href="#">About</a>
+                    </div>
+                    <div class="col-md-2">
+
+                        <a href="#">Facebook Lite</a><br>
+                        <a href="#">Create Advert</a>
+                    </div>
+                    <div class="col-md-1" style="margin-left:-70px;">
+
+                        <a href="#">Mobile</a><br>
+                        <a href="#">Create Page</a>
+                    </div>
+                    <div class="col-md-1">
+
+                        <a href="#">Find Friends</a><br>
+                        <a href="#">Developers</a>
+                    </div>
+                    <div class="col-md-1">
+
+                        <a href="#">Badges</a>
+                        <a href="#">Careers</a>
+                    </div>
+                    <div class="col-md-1">
+
+                        <a href="#">People</a>
+                        <a href="#">Privacy</a>
+                    </div>
+                    <div class="col-md-1">
+
+                        <a href="#">Pages</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                    <div class="col-md-1">
+
+                        <a href="#">Places</a>
+                        <a href="#">AdChoices</a>
+                    </div>
+                </div>
+                <br>
+                <p style="font-size:12px;">Facebook<i class="fa fa-copyright" aria-hidden="true"></i>2016</p>
+                <p style="color: blue; font-size: 12px;">English (UK)</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="bootstrap/js/bootstrap.min.js "></script>
+</body>
+
+</html>
